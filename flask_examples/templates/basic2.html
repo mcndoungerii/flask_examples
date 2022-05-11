@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Flask Examples</title>
-    </head>
-    <body>
-        <ul>
-            {% for item in mylist %}
-            <li>{{item}}</li>
-            {% endfor %}
-        </ul>
-    </body> 
+
+<head>
+    <meta charset="utf-8">
+    <title>Flask Examples</title>
+</head>
+
+<body>
+    <ul>
+        {% for pup in puppies %}
+        <li>{{pup}}</li>
+        {% endfor %}
+    </ul>
+
+    {% if 'Rufus' in puppies %}
+    <p>Found you Rufus!</p>
+    {% else %}
+    <p> Hmm.. Rufus is not in this list!</p>
+    {% endif %}
+</body>
+
 </html>
