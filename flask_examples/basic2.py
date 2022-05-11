@@ -4,8 +4,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    puppies = ["Fluffy", "Rufus","Spike"]
-    return render_template('basic2.html',puppies=puppies)
+    # puppies = ["Fluffy", "Rufus","Spike"]
+    user_logged_in = True;
+    return render_template('basic2.html',user_logged_in=user_logged_in)
 
 if __name__ == "__main__":
     app.run(debug=True)
