@@ -5,8 +5,8 @@
     <title>Flask Examples</title>
     </head>
 <body>
-    <h1>Welcome to the site!</h1>
-    <h2>Here is a pic of a puppy</h2>
-    <img src="{{ url_for('static', filename='puppy_pic.jpg') }}" alt="Puppy" />
+    <h1>Hello {{name}}</h1>
+    <h1>{{letters[2:]}}</h1>
+    <h1>Pup name is {{pup_dictionary['pup_name']}}, and age is {{pup_dictionary['age']}}</h1>
 </body>
 </html>
